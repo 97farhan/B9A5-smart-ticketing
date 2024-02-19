@@ -125,7 +125,7 @@
                         <img src="images/bus-logo.png" alt="">
                         <p>Greenline Express <br> Coach-a-3 Business class</p>
                     </div>
-                    <div><button class="btn"><img src="images/bus-icon.png" alt="">40 seats left</button></div>
+                    <div><button id="seatCount" class="btn"><img src="images/bus-icon.png" alt="">8 seats left</button></div>
                 </div>
                 <div class="overflow-x-auto">
                     <table class="table">
@@ -171,97 +171,110 @@
         </div>
 
         <div class="seat-calculation">
-            <div><p>Select your seat</p></div>
-            <div class="flex justify-between">
-                <p class="flex"><img src="images/seat-gray.png" alt="">Available</p>
-                <p class="flex"><img src="images/seat-green-filled.png" alt="">Selected</p>
-            </div>
-            <div><button class="btn"><img src="" alt=""></button></div>
-            <div class="flex gap-5 w-auto h-auto"> 
-                <div>
-                    <div>
-                        <kbd class="kbd">A1</kbd>
-                        <kbd class="kbd">A2</kbd>
+            <section class="full flex gap-6">
+                
+                    <div class="w-1/2">
+                        <div><p>Select your seat</p></div>
+                        <div class="flex justify-between">
+                            <p class="flex"><img src="images/seat-gray.png" alt="">Available</p>
+                            <p class="flex"><img src="images/seat-green-filled.png" alt="">Selected</p>
+                        </div>
+                        <div><button class="btn"><img src="" alt=""></button></div>
+                        <div class="flex gap-5 w-auto h-auto justify-between"> 
+                            <div>
+                                <div>
+                                    <kbd class="kbd"><h1>A1</h1></kbd>
+                                    <kbd class="kbd"><h1>A2</h1></kbd>
+                                </div>
+                                <div>
+                                    <kbd class="kbd"><h1>B1</h1></kbd>
+                                    <kbd class="kbd"><h1>B2</h1></kbd>
+                                </div>
+                
+                            </div>
+                            <div>
+                                <div>
+                                    <kbd class="kbd"><h1>B1</h1></kbd>
+                                    <kbd class="kbd"><h1>B2</h1></kbd>
+                                </div>
+                                <div>
+                                    <kbd class="kbd"><h1>B3</h1></kbd>
+                                    <kbd class="kbd"><h1>B4</h1></kbd>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="w-1/2">
+                            <div><p>Select your seat</p></div>
+                            <div> 
+                                <div class="overflow-x-auto">
+                                    <table class="table">
+                                      
+                                      <thead id="row-one">
+                                        <tr>
+                                          
+                                          <th>Seat</th>
+                                          <th>Class</th>
+                                          <th>Price</th>
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                        <tr>
+
+                                        </tr>
+                                        <!-- row 1 -->
+                                        
+                                        <tr>
+                                          
+                                            <th>Total Price</th>
+                                            <td></td>
+                                            <td></td>
+                                          </tr>
+                                           
+                        
+                                        
+                                      </tbody>
+                                    </table>
+                                    <div class="join">
+                                        <input class="input input-bordered join-item" placeholder="Have any Coupon"/>
+                                        <button class="btn join-item rounded-r-full">Apply</button>
+                                      </div>
+                                    <table>
+                                        <tr>
+                                            <th>grand Total</th>
+                                            <tr></tr>
+                                            <th></th>
+                                        </tr>
+                                    </table>    
+                                  </div>
+                                  <div class="addess">
+                                    <p>Passenger Name*</p>
+                                    <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs" />
+                                    <p>Phone number*</p>
+                                    <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs" />
+                                    <p>Email ID*</p>
+                                    <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs" />
+                                  </div>
+                                 <div>
+                                    <button class="btn">Next</button>
+                                 </div> 
+                            </div>
+                        </div>
+                        
                     </div>
-                    <div>
-                        <kbd class="kbd">B1</kbd>
-                        <kbd class="kbd">B2</kbd>
-                    </div>
-    
-                </div>
-                <div>
-                    <div>
-                        <kbd class="kbd">A3</kbd>
-                        <kbd class="kbd">A4</kbd>
-                    </div>
-                    <div>
-                        <kbd class="kbd">B3</kbd>
-                        <kbd class="kbd">B4</kbd>
-                    </div>
-                </div>
-            </div>
-            </div>
+                    
+                    <!-- pore start -->
+                    
+                    
+                
+            
+            
+           
             <!-- seat price section -->
-
-            <div>
-                <div><p>Select your seat</p></div>
-                <div> <!--table start-->
-                    <div class="overflow-x-auto">
-                        <table class="table">
-                          <!-- head -->
-                          <thead>
-                            <tr>
-                              
-                              <th>Seat</th>
-                              <th>Class</th>
-                              <th>Price</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <!-- row 1 -->
-                            <tr>
-                              
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              
-                                <th>Total Price</th>
-                                <td></td>
-                                <td></td>
-                              </tr>
-                               
-
-                            
-                          </tbody>
-                        </table>
-                        <div class="join">
-                            <input class="input input-bordered join-item" placeholder="Email"/>
-                            <button class="btn join-item rounded-r-full">Subscribe</button>
-                          </div>
-                        <table>
-                            <tr>
-                                <th>grand Total</th>
-                                <tr></tr>
-                                <th></th>
-                            </tr>
-                        </table>    
-                      </div>
-                      <div class="addess">
-                        <p>Passenger Name*</p>
-                        <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs" />
-                        <p>Phone number*</p>
-                        <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs" />
-                        <p>Email ID*</p>
-                        <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs" />
-                      </div>
-                     <div>
-                        <button class="btn">Next</button>
-                     </div> 
-                </div>
-            </div>
-
+            
+        </section>
+           
+            
            
         
     </section>    
@@ -272,6 +285,8 @@
 
     </footer>
 
+    <script src="./dom.js"></script>
+    <script src="./utility.js"></script>
 </body>
 
 </html>

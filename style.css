@@ -4,3 +4,11 @@
 #offer-button{
     border: 1px solid green;
 }
+.full{
+    display: flex;
+    border: 1px solid black;
+}
+.age{
+    display: flex;
+    border: 1px solid green;
+}
